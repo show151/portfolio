@@ -70,3 +70,19 @@
     font-size: 24px;
     margin-bottom: 60px;
 }
+
+.footer{
+    height: 120px;
+    background-color: #2f3a44;
+    color: #e8e8e8;
+    padding-top: 20px;
+}
+
+.footer-left{
+    float: left;
+}
+
+.footer-right{
+    float: right;
+    padding-top: 50px;
+}
