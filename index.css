@@ -53,7 +53,7 @@
 
 .main-visual{
     padding-top: 140px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     background-image: url("image/25478215_m.jpg");
     background-size: cover;
     color: #f5f5f5;
@@ -62,12 +62,13 @@
 
 .top-title{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 64px;
+    font-size: 80px;
+    margin-top: 140px;
     margin-bottom: 10px;
 }
 
 .top-subtitle{
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 60px;
 }
 

@@ -65,7 +65,7 @@
     padding: 25px 30px;
     background-color: #dbe0e4;
     border-radius: 7px;
-    box-shadow: 1px 1px 4px #d2d4d6;
+    box-shadow: 10px 10px 20px #d2d4d6;
     text-align: center;
     margin: 0 20px;
 }
@@ -78,10 +78,6 @@
 
 .skills-title{
     margin-bottom: 8px;
-}
-
-.skills-text{
-    font-size: 14px;
 }
 
 .skills-card-wrapper{
