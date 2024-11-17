@@ -54,7 +54,7 @@
 .main-visual{
     padding-top: 140px;
     padding-bottom: 200px;
-    background-image: url("image/25478215_m.jpg");
+    background-image:linear-gradient(rgb(49, 49, 49), rgb(49, 49, 49, 0), rgba(49, 49, 49)), url("image/スクリーンショット\ 2024-11-18\ 003417.png");
     background-size: cover;
     color: #f5f5f5;
     text-align: center;
@@ -65,11 +65,77 @@
     font-size: 80px;
     margin-top: 140px;
     margin-bottom: 10px;
+    text-shadow:  
+    3px 3px 3px #000, -3px -3px 3px #000,
+    -3px 3px 3px #000,  3px -3px 3px #000,
+    3px 0px 3px #000, -3px -0px 3px #000,
+    0px 3px 3px #000,  0px -3px 3px #000;;
 }
 
 .top-subtitle{
     font-size: 30px;
     margin-bottom: 60px;
+}
+
+.profile{
+    padding: 90px 0 60px;
+    color: #5a5c5f;
+}
+
+.profile_table{
+    width: 100%;
+    font-size: 30px;
+    color: black;
+}
+
+th{
+    padding : 20px 10px;
+    width: 30%;
+}
+
+td{
+    padding : 20px 10px;
+    width: 70%;
+}
+
+.profile_table {
+    text-align: left;
+    padding-inline: 15px;
+}
+
+.skills{
+    padding: 90px 0 60px;
+    color: #5a5c5f;
+}
+
+.skills-card{
+    width: 20%;
+    margin-top: 35px;
+}
+
+.skills-card-inner{
+    padding: 25px 30px;
+    background-color: #dbe0e4;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px #d2d4d6;
+    text-align: center;
+    margin: 0 20px;
+    color: black;
+}
+
+.skills-image{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.skills-title{
+    margin-bottom: 8px;
+}
+
+.skills-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer{
