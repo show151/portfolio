@@ -12,6 +12,10 @@
     .skills-card{
         width: 50%;
     }
+
+    .products-card{
+        width: 50%;
+    }
 }
 
 @media (max-width: 670px){
@@ -31,6 +35,14 @@
     .skills-card{
         width: 100%;
     }
+
+    .skills-title{
+        font-size: 14px;
+    }
+
+    .products-card{
+        width: 100%;
+    }
 }
 
 @media (max-width: 380px){
@@ -48,6 +60,14 @@
     }
 
     .skills-card{
+        width: 100%;
+    }
+
+    .skills-title{
+        font-size: 10px;
+    }
+
+    .products-card{
         width: 100%;
     }
 }

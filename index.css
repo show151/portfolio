@@ -138,6 +138,37 @@ td{
     flex-wrap: wrap;
 }
 
+.products{
+    padding: 90px 0 60px;
+    color: #5a5c5f;
+}
+
+.products-card{
+    width: 50%;
+    margin-top: 35px;
+}
+
+.products-card-inner{
+    padding: 25px 30px;
+    background-color: #dbe0e4;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px #d2d4d6;
+    text-align: center;
+    margin: 0 20px;
+    color: black;
+}
+
+.products-image{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.products-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer{
     height: 120px;
     background-color: #2f3a44;
