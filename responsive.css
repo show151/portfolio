@@ -1,62 +1,44 @@
-/* responsive.css */
+@charset "utf-8";
 
-@media (max-width: 1024px) {
-    .main-visual {
-        padding-top: 120px;
-        padding-bottom: 80px;
-    }
-
-    .top-title {
-        font-size: 60px;
-    }
-
-    .skills-card,
-    .products-card {
-        width: 50%;
-    }
+/* レスポンシブ対応スタイル */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-@media (max-width: 670px) {
-    .header-left {
-        display: none;
+.item {
+    flex: 1 1 calc(50% - 20px);
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
     }
 
     .header-right {
-        float: none;
-        text-align: center;
-    }
-
-    .header-right a {
-        font-size: 14px;
-    }
-
-    .skills-card,
-    .products-card {
-        width: 100%;
-    }
-
-    .skills-title {
-        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
 
-@media (max-width: 390px) { /* iPhone 14 用 */
-    .main-visual {
-        padding-top: 100px;
-        padding-bottom: 60px;
-    }
-
+@media (max-width: 480px) {
     .top-title {
-        font-size: 48px;
+        font-size: 2rem;
     }
 
-    .skills-card,
-    .products-card {
-        width: 100%;
-        margin: 10px 0;
+    .top-subtitle {
+        font-size: 1rem;
     }
 
-    .header-right a {
-        font-size: 12px;
+    .item {
+        flex: 1 1 100%;
     }
 }
