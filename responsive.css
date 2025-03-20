@@ -1,73 +1,62 @@
-@charset "uft-8";
-@media (max-width: 1024px){
-    .main-visual{
+/* responsive.css */
+
+@media (max-width: 1024px) {
+    .main-visual {
         padding-top: 120px;
         padding-bottom: 80px;
     }
 
-    .top-title{
+    .top-title {
         font-size: 60px;
     }
 
-    .skills-card{
-        width: 50%;
-    }
-
-    .products-card{
+    .skills-card,
+    .products-card {
         width: 50%;
     }
 }
 
-@media (max-width: 670px){
-    .header-left{
+@media (max-width: 670px) {
+    .header-left {
         display: none;
     }
 
-    .header-right{
+    .header-right {
         float: none;
         text-align: center;
     }
 
-    .header-right a{
+    .header-right a {
         font-size: 14px;
     }
 
-    .skills-card{
+    .skills-card,
+    .products-card {
         width: 100%;
     }
 
-    .skills-title{
+    .skills-title {
         font-size: 14px;
-    }
-
-    .products-card{
-        width: 100%;
     }
 }
 
-@media (max-width: 380px){
-    .header-left{
-        display: none;
+@media (max-width: 390px) { /* iPhone 14 用 */
+    .main-visual {
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
-    .header-right{
-        float: none;
-        text-align: center;
+    .top-title {
+        font-size: 48px;
     }
 
-    .header-right a{
+    .skills-card,
+    .products-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .header-right a {
         font-size: 12px;
-    }
-
-    .skills-card{
-        width: 100%;
-    }
-
-    .skills-title{
-        font-size: 10px;
-    }
-
-    .products-card{
-        width: 100%;
     }
 }
