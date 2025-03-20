@@ -1,44 +1,80 @@
 @charset "utf-8";
 
-/* レスポンシブ対応スタイル */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.item {
-    flex: 1 1 calc(50% - 20px);
-}
-
+/* タブレットサイズ以下の調整 */
 @media (max-width: 768px) {
-    .item {
-        flex: 1 1 100%;
+    .profile_table {
+        font-size: larger;
+    }
+
+    .skills-card {
+        flex: 1 1 calc(50% - 10px); /* タブレットでも2列表示を維持 */
+    }
+
+    .products-card {
+        flex: 1 1 100%; /* タブレットでも1列表示を維持 */
     }
 
     .header {
-        flex-direction: column;
-        height: auto;
+        flex-direction: column; /* ヘッダー内要素を縦方向に配置 */
+        align-items: center;
+        padding: 15px;
+        height: 80px;
     }
 
     .header-right {
+        margin-top: 10px;
         display: flex;
         justify-content: center;
-        margin-top: 10px;
     }
 }
 
+/* スマートフォンサイズ以下の調整 */
 @media (max-width: 480px) {
+    .profile_table {
+        font-size: large;
+    }
+
+    .skills-card {
+        flex: 1 1 100%; /* スマートフォンでは1列表示に */
+    }
+
+    .products-card {
+        flex: 1 1 100%; /* スマートフォンでも1列表示を維持 */
+    }
+
+    .header {
+        padding: 15px;
+        height: 130px;
+    }
+
+    .header-right a {
+        font-size: 14px; /* スマートフォンではフォントサイズを小さく */
+    }
+}
+
+@media (max-width: 320px) {
     .top-title {
-        font-size: 2rem;
+        font-size: 30px;
     }
 
-    .top-subtitle {
-        font-size: 1rem;
+    .profile_table {
+        font-size: large;
     }
 
-    .item {
-        flex: 1 1 100%;
+    .skills-card {
+        flex: 1 1 100%; /* スマートフォンでは1列表示に */
+    }
+
+    .products-card {
+        flex: 1 1 100%; /* スマートフォンでも1列表示を維持 */
+    }
+
+    .header {
+        padding: 15px;
+        height: 130px;
+    }
+
+    .header-right a {
+        font-size: 14px; /* スマートフォンではフォントサイズを小さく */
     }
 }
