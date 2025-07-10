@@ -4,31 +4,31 @@
         <meta charset="utf-8">
         <title>My Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="common.css">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="container">
                 <div class="header-left">
                     <img class="header-logo" src="image/スクリーンショット 2024-11-21 004749.png" alt="My Portfolio">
                 </div>
-                <div class="header-right">
+                <nav class="header-right">
                     <a href="#top">Top</a>
                     <a href="#profile">Profile</a>
                     <a href="#skills">Skills</a>
                     <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="main-visual" id="top">
+                <div class="container">
+                    <h1 class="top-title">My Portfolio</h1>
                 </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="main-visual" id="top">
-            <div class="container">
-                <h1 class="top-title">My Portfolio</h1>
-            </div>
-        </div>
-        <div class="profile" id="profile">
+            </section>
+            <section class="profile" id="profile">
             <div class="container">
                 <h2>Profile</h2>
                 <table class="profile_table">
@@ -47,17 +47,17 @@
                         </tr>
                         <tr>
                             <th>Affiliation</th>
-                            <td>大阪公立大高専 <br> 総合工学システム学科 知能情報コース</td>
+                            <td>大阪公立大高専 総合工学システム学科 知能情報コース</td>
                         </tr>
                         <tr>
                             <th>Hobby</th>
-                            <td>ゲーム・運動・読書・英会話 など</td>
+                            <td>会話・運動・読書・英会話 など</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
-        <div class="skills" id="skills">
+            </section>
+            <section class="skills" id="skills">
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills-card-wrapper">
@@ -65,30 +65,45 @@
                         <div class="skills-card-inner">
                             <img class="skills-image" src="image/logo/file_type_python_icon_130221.png" alt="Python">
                             <h3 class="skills-title">Python</h3>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="skills-card">
                         <div class="skills-card-inner">
                             <img class="skills-image" src="image/logo/file_type_kotlin_icon_130487.png" alt="Kotlin">
                             <h3 class="skills-title">Kotlin</h3>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="70"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="skills-card">
                         <div class="skills-card-inner">
                             <img class="skills-image" src="image/logo/emblem-c-plus-programming-language-600nw-1669056601 (1).png" alt="C++">
                             <h3 class="skills-title">C++</h3>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="60"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="skills-card">
                         <div class="skills-card-inner">
                             <img class="skills-image" src="image/logo/file_type_html_icon_130541.png" alt="HTML">
                             <h3 class="skills-title">HTML</h3>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="skills-card">
                         <div class="skills-card-inner">
                             <img class="skills-image" src="image/logo/file_type_css_icon_130661.png" alt="CSS">
                             <h3 class="skills-title">CSS</h3>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="skills-card">
@@ -153,8 +168,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="products" id="products">
+            </section>
+            <section class="products" id="products">
             <div class="container">
                 <h2>Products</h2>
                 <div class="products-card-wrapper">
@@ -169,7 +184,7 @@
                         <div class="products-card-inner">
                             <img class="products-image" src="image/スクリーンショット 2024-11-19 005737.png" alt="ultralytics">
                             <h2 class="products-title">物体検知アプリ</h2>
-                            <h3 class="products-text">高専祭の展示として総合課題実習で製作中のアプリのAIの動作部分のアプリを製作しました</h3>
+                            <h3 class="products-text">高専祭の展示として総合課題実習1で製作中のアプリのAIの動作部分のアプリを製作しました</h3>
                         </div>
                     </div>
                     <div class="products-card">
@@ -188,13 +203,33 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
+            </section>
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <div class="contact-content">
+                        <p class="contact-text">お気軽にお問い合わせください</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/show151" class="contact-link" target="_blank">
+                                <img src="image/logo/github_black_logo_icon_147128.png" alt="GitHub">
+                                GitHub
+                            </a>
+                            <a href="mailto:your-email@example.com" class="contact-link">
+                                <span class="email-icon">✉</span>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
             <div class="container">
-                <div class="footer-left"></div>
-                <div class="footer-right"></div>
-                <div class="clear"></div>
             </div>
-        </div>
+        </footer>
+        <button id="back-to-top" class="back-to-top" aria-label="トップに戻る">
+            ↑
+        </button>
+        <script src="script.js"></script>
     </body>
 </html>
