@@ -29,6 +29,22 @@
         font-size: 36px;
     }
 
+    .portfolio-notice {
+        margin-top: 20px;
+        padding: 16px 18px;
+        gap: 12px;
+    }
+
+    .portfolio-notice-text {
+        font-size: 16px;
+    }
+
+    .portfolio-cta {
+        min-width: 180px;
+        padding: 9px 16px;
+        font-size: 14px;
+    }
+
     .profile_table {
         font-size: 16px;
         width: 100%;
@@ -81,6 +97,20 @@
 
     .top-title {
         font-size: 28px;
+    }
+
+    .portfolio-notice {
+        padding: 14px 16px;
+    }
+
+    .portfolio-notice-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .portfolio-cta {
+        min-width: 160px;
+        font-size: 13px;
     }
 
     .profile_table {
@@ -150,6 +180,15 @@
 
     .top-title {
         font-size: 24px;
+    }
+
+    .portfolio-notice-text {
+        font-size: 12px;
+    }
+
+    .portfolio-cta {
+        min-width: 140px;
+        font-size: 12px;
     }
 
     .profile_table th,
